@@ -133,6 +133,26 @@ img {
   text-align: center;
 }
 
+.subsection {
+  padding: 2rem 0 4rem;
+}
+
+.subsection__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+
+.subsection__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.subsection__title,
+.subsection__subtitle {
+  text-align: center;
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -384,7 +404,7 @@ img {
   text-align: center;
 }
 
-.about-button{
+.about__buttons{
   display: flex;
   justify-content: center;
 }
