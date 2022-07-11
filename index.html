@@ -7,6 +7,8 @@
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== DEVICONS ====================-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="">
@@ -25,17 +27,22 @@
               <ul class="nav__list grid">
                 <li class="nav__item">
                   <a href="#home" class="nav__link">
-                    <i class="uil uil-estate nav__icon"></i> Home
+                    <i class="uil uil-estate nav__icon"></i>Home
                   </a>
                 </li>
                 <li class="nav__item">
                   <a href="#about" class="nav__link">
-                    <i class="uil uil-user nav__icon"></i> About
+                    <i class="uil uil-user nav__icon"></i>About
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#skills" class="nav__link">
+                    <i class="uil uil-setting nav__icon"></i>Skills
                   </a>
                 </li>
                 <li class="nav__item">
                   <a href="#publications" class="nav__link">
-                    <i class="uil uil-file-alt nav__icon"></i> Publications
+                    <i class="uil uil-file-alt nav__icon"></i>Publications
                   </a>
                 </li>
               </ul>
@@ -144,47 +151,129 @@
                   </div>
                 </div>
               </div>
-              <!--==================== SKILLS ====================-->
-              <section class="skills subsection" id="skills">
-                <h3 class="subsection__title">Skills</h3>
-                <span class="subsection__subtitle">My datasheet</span>
+            </section>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+              <h2 class="section__title">Skills</h2>
+              <span class="section__subtitle">My datasheet</span>
 
-                <div class="skills__container container grid">
-                  <div>
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                      <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-
-                        <div>
-                          <h1 class="skills__title">Coding</h1>
-                          <span class="skills__subtitle">Programming languages and tools</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
+              <div class="skills__container container grid">
+                <div>
+                  <!--==================== CODING ====================-->
+                  <div class="skills__content skills__open">
+                    <div class="skills__header">
+                      <i class="uil uil-brackets-curly skills__icon"></i>
+                      <div>
+                        <h1 class="skills__titless">Coding</h1>
+                        <span class="skills__subtitle">Programming languages and tools</span>
                       </div>
-
-                      <!-- not clear how to approach skills description -->
-                      <div class="skills__list grid">
-                        <div class="skills__data">
-                          <div class="skills__title">
-                            <h3 class="skills__name">Python</h3>
-
-                          </div>
-
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Python <i class="devicon-python-plain colored skills__icon-small"></i></span>
                         </div>
-
                       </div>
-
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">DL libraries <i class="devicon-pytorch-original colored skills__icon-small"></i><i class="devicon-tensorflow-original colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Django <i class="devicon-django-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Bash <i class="devicon-bash-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">HTML, css, JS <i class="devicon-html5-plain colored skills__icon-small"></i><i class="devicon-css3-plain colored skills__icon-small"></i><i class="devicon-javascript-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
+                  <!--==================== TOOLS ====================-->
+                  <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="uil uil-trowel skills__icon"></i>
+                      <div>
+                        <h1 class="skills__titles">Programming tools</h1>
+                        <span class="skills__subtitle">Set of tools that ...</span>
+                      </div>
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Docker <i class="devicon-docker-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Git <i class="devicon-git-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">AWS <i class="devicon-amazonwebservices-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--==================== OTHER ====================-->
+                  <div class="skills__content skills__close">
+                    <div class="skills__header">
+                      <i class="uil uil-arrow-random skills__icon"></i>
+                      <div>
+                        <h1 class="skills__titles">Other</h1>
+                        <span class="skills__subtitle">Set of tools that ...</span>
+                      </div>
+                      <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Adobe Suite<i class="devicon-photoshop-plain colored skills__icon-small"></i><i class="devicon-premierepro-plain colored skills__icon-small"></i></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <span class="skills__name">Logic <i class="uil uil-music skills__icon-small" style="color: var(--first-color)"></i></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </section>
-
+              </div>
             </section>
 
             <!--==================== PUBLICATIONS ====================-->
             <section class="publications section" id="publications">
+              <h2 class="section__title">Publications</h2>
+              <span class="section__subtitle">List of publications, you can also find them in my <a href="https://scholar.google.com/citations?user=V0Zg1zkAAAAJ" target="_blank" style="color: var(--first-color)">scholar profile</a></span>
+
+              <!--div class="publications__container container grid">
+                <div class="publications__list grid">
+                  <div class="publications__data">
+                    <div class="publications__titles">
+                      <span class="publications__name">End to End</span>
+                    </div>
+                  </div>
+                </div>
+              </div-->
+
+              <div class="publications__container container grid">
+                <div class="publications__list grid">
+                  <div class="publications__data">
+                    <span class="publications__name">J Luque, G Cortes, C Segura, A Maravilla, J Esteban, J Fabregat. End-to-end photoplethysmography (PPG) based biometric authentication by using convolutional neural networks. 26th European Signal Processing Conference (EUSIPCO), 538-542. 2018. [<a href="https://www.eurasip.org/Proceedings/Eusipco/Eusipco2018/papers/1570435449.pdf" target="_blank" style="color: var(--first-color)">paper</a>]</span>
+                  </div>
+                </div>
+              </div>
 
             </section>
 
