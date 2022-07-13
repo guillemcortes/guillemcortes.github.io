@@ -78,6 +78,12 @@ tabs.forEach(tab =>{
 /*==================== TESTIMONIAL ====================*/
 
 
+/*==================== FOOTER ====================*/
+const paragraph = `
+  <p class="footer__copy">&copy; ${new Date().getFullYear()} Guillem Cortès Sebastià. All rights reserved. Adapted from <a href=https://github.com/bedimcode/responsive-portfolio-website-Alexa>Bedimcode</a>.</p>
+`;
+
+document.getElementById('copyright').innerHTML = paragraph;
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
