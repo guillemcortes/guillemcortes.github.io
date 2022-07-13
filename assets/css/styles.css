@@ -257,7 +257,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /* Change background header */
 
@@ -519,51 +521,51 @@ img {
   /*font-weight: var(--font-medium);*/
 }
 
-/*==================== QUALIFICATION ====================*/
-.qualification__tabs{
+/*==================== path ====================*/
+.path__tabs{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2);
 }
 
-.qualification__button{
+.path__button{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
 }
 
-.qualification__button:hover{
+.path__button:hover{
   color:var(--first-color);
 }
 
-.qualification__icon{
+.path__icon{
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
 
-.qualification__data{
+.path__data{
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
 }
 
-.qualification__title{
+.path__title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
 
-.qualification__subtitle{
+.path__subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
 }
 
-.qualification__calendar{
+.path__calendar{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
 
-.qualification__rounder{
+.path__rounder{
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -571,7 +573,7 @@ img {
   border-radius: 50%;
 }
 
-.qualification__line{
+.path__line{
   display: block;
   width: 1px;
   height: 100%;
@@ -579,15 +581,15 @@ img {
   transform: translate(6px,-7px);
 }
 
-.qualification [data-content]{
+.path [data-content]{
   display: none;
 }
 
-.qualification__active[data-content]{
+.path__active[data-content]{
   display: block;
 }
 
-.qualification__button.qualification__active{
+.path__button.path__active{
   color: var(--first-color);
 }
 
