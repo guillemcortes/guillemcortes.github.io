@@ -455,7 +455,7 @@ img {
   padding-left: 2.7rem;
 }
 
-.skills_titles{
+.skills__titles{
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
@@ -464,6 +464,30 @@ img {
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+}
+
+.skills__bar,
+.skills__percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills__bar{
+  background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__cat,
+.skills__esp{
+  width: 100%;
+}
+
+.skills__eng{
+  width: 85%;
 }
 
 .skills__close .skills__list{
