@@ -1,0 +1,100 @@
+.flexbin {
+    display: flex;
+    overflow: clip;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.flexbin:after {
+    content: '';
+    flex-grow: 9999;
+    min-width: 30px;
+    height: 0;
+}
+
+.flexbin>* {
+    position: relative;
+    display: block;
+    height: 300px;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.flexbin>*>img {
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+}
+
+.flexbin.flexbin-margin {
+    margin: 20px;
+    left: 0px;
+}
+
+@media (max-width: 980px) {
+    .flexbin {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    .flexbin:after {
+        content: '';
+        flex-grow: 9999;
+        min-width: 15px;
+        height: 0;
+    }
+    .flexbin>* {
+        position: relative;
+        display: block;
+        height: 150px;
+        margin: 10px;
+        flex-grow: 1;
+    }
+    .flexbin>*>img {
+        height: 150px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+    }
+    .flexbin.flexbin-margin {
+        margin: 10px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .flexbin {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+    .flexbin:after {
+        content: '';
+        flex-grow: 99999;
+        min-width: 10px;
+        height: 0;
+    }
+    .flexbin>* {
+        position: relative;
+        display: block;
+        height: 100px;
+        margin: 5px;
+        flex-grow: 1;
+    }
+    .flexbin>*>img {
+        height: 100px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+    }
+    .flexbin.flexbin-margin {
+        margin: 5px;
+        left: 0px;
+    }
+}
