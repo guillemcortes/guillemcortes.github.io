@@ -569,6 +569,7 @@ img {
 
 .publications__name{
   font-size: var(--small-font-size);
+  display: block;
   /*font-weight: var(--font-medium);*/
 }
 
@@ -608,7 +609,7 @@ img {
 .path__subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  /*margin-bottom: var(--mb-1);*/
 }
 
 .path__calendar{
@@ -779,10 +780,6 @@ img {
   .skills__title{
     font-size: var(--normal-font-size);
   }
-
-  .path__data{
-    /*gap: 5rem;*/
-  }
 }
 
 /* For medium devices */
@@ -796,18 +793,6 @@ img {
   .home__img{
     order: 1;
     justify-self: center;
-  }
-
-  .path__tabs{
-    justify-content: center;
-  }
-  .path__button{
-    margin: 0 var(--mb-1);
-  }
-  .path__sections{
-    display: grid;
-    grid-template-columns: .6fr;
-    justify-content: center;
   }
 
   /*.about__container{
